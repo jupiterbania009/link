@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Video Player & Downloader | 4K Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-play-circle"></i>
+            </div>
+            <h1>Universal Video Player & Downloader</h1>
+            <p class="subtitle">Play and download videos from YouTube, Terabox, Dailymotion, Vimeo and many other platforms in one place</p>
+            <div class="tagline">
+                <i class="fas fa-crown"></i> 4K Ultra HD Download Support
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="player-section">
+                <h2 class="section-title">
+                    <i class="fas fa-video"></i>
+                    <span>Video Player</span>
+                </h2>
+                
+                <div class="url-input">
+                    <p>Paste video URL from any supported platform:</p>
+                    <div class="input-group">
+                        <input type="text" id="videoUrl" placeholder="https://www.youtube.com/watch?v=...">
+                        <button class="btn" id="playBtn"><i class="fas fa-play"></i> Play Video</button>
+                    </div>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-placeholder" id="placeholder">
+                        <i class="fas fa-film"></i>
+                        <p>Enter a video URL to play. 4K videos available for download!</p>
+                    </div>
+                    <iframe class="video-player" id="videoPlayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="download-section" id="downloadSection">
+                    <h2 class="section-title">
+                        <i class="fas fa-download"></i>
+                        <span>Download Options</span>
+                    </h2>
+                    
+                    <div class="download-options">
+                        <div class="download-option quality-4k premium" data-quality="2160p">
+                            <i class="fas fa-tv"></i>
+                            <div class="quality-name">4K UHD (2160p)</div>
+                            <div class="quality-desc">Ultra High Definition</div>
+                        </div>
+                        <div class="download-option" data-quality="1080p">
+                            <i class="fas fa-hd"></i>
+                            <div class="quality-name">Full HD (1080p)</div>
+                            <div class="quality-desc">High Definition</div>
+                        </div>
+                        <div class="download-option" data-quality="720p">
+                            <i class="fas fa-film"></i>
+                            <div class="quality-name">HD (720p)</div>
+                            <div class="quality-desc">Standard HD</div>
+                        </div>
+                        <div class="download-option" data-quality="480p">
+                            <i class="fas fa-tablet-alt"></i>
+                            <div class="quality-name">SD (480p)</div>
+                            <div class="quality-desc">Standard Quality</div>
+                        </div>
+                        <div class="download-option" data-quality="audio">
+                            <i class="fas fa-music"></i>
+                            <div class="quality-name">MP3 Audio</div>
+                            <div class="quality-desc">High Quality Audio</div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-info">
+                        <i class="fas fa-info-circle"></i>
+                        <div>4K downloads are available for supported videos. Video processing may take longer for higher resolutions.</div>
+                    </div>
+                    
+                    <button class="btn btn-download" id="downloadBtn" style="margin-top: 25px; width: 100%;">
+                        <i class="fas fa-cloud-download-alt"></i> Download Selected Quality
+                    </button>
+                </div>
+            </div>
+            
+            <div class="supported-platforms">
+                <h2 class="section-title">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Supported Platforms</span>
+                </h2>
+                <p>We support videos from these platforms and many others:</p>
+                
+                <div class="platforms-grid">
+                    <div class="platform">
+                        <i class="fab fa-youtube"></i>
+                        <div class="platform-name">YouTube</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fas fa-cloud"></i>
+                        <div class="platform-name">Terabox</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-vimeo"></i>
+                        <div class="platform-name">Vimeo</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-dailymotion"></i>
+                        <div class="platform-name">Dailymotion</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-facebook"></i>
+                        <div class="platform-name">Facebook</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-instagram"></i>
+                        <div class="platform-name">Instagram</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fab fa-twitter"></i>
+                        <div class="platform-name">Twitter</div>
+                    </div>
+                    <div class="platform">
+                        <i class="fas fa-video"></i>
+                        <div class="platform-name">Direct Links</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; background: rgba(255, 215, 0, 0.1); padding: 20px; border-radius: 15px; border: 1px solid rgba(255, 215, 0, 0.3);">
+                    <h2 class="section-title">
+                        <i class="fas fa-crown"></i>
+                        <span>4K Download Features</span>
+                    </h2>
+                    <ul style="padding-left: 25px; margin-top: 15px;">
+                        <li style="margin-bottom: 10px;">True 4K UHD (3840x2160) resolution</li>
+                        <li style="margin-bottom: 10px;">High bitrate for superior quality</li>
+                        <li style="margin-bottom: 10px;">HDR support for compatible videos</li>
+                        <li>Preserve original audio quality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i>
+                <span>How to Download Videos</span>
+            </h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Copy Video URL</h3>
+                    <p>Copy the URL of the video you want to download from any supported platform.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Paste URL</h3>
+                    <p>Paste the URL in the input field above and click the Play button to load the video.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Select Quality</h3>
+                    <p>Choose your preferred download quality including 4K UHD for supported videos.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Download</h3>
+                    <p>Click the Download button and save your video in the selected quality.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Universal Video Player & Downloader | All Rights Reserved</p>
+            <p>Disclaimer: This tool is for personal use only. Please respect copyright laws and platform terms of service.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
